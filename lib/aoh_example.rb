@@ -25,6 +25,6 @@ def aoh_lookup(aoh, row, key)
 end
 
 def aoh_update(aoh, row, key, new_value)
-  new_value == aoh[row][key]
-  return aoh
+  new_value = aoh[row][key]
+  return aoh[row][key][new_value]
 end
